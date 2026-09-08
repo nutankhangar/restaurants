@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ishtihar — A vintage digital studio crafting bold experiences.">
+  <title>Ishtihar — Retro Studio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <a href="#" class="nav-logo" aria-label="Ishtihar home">
+    <span class="nav-logo-mark"></span>
+    <span class="nav-logo-text">ISHTIHAR</span>
+  </a>
+
+  <div style="display: flex; align-items: center;">
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <ul class="nav-links" id="primary-nav" role="list">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">LET'S TALK</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- ── HERO ────────────────────────────────────────────── -->
+  <header class="hero" id="top" aria-label="Introduction">
+    <!-- Retro spinning sticker -->
+    <div class="retro-sticker">
+      <svg viewBox="0 0 100 100">
+        <path id="curve" fill="transparent" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+        <text><textPath href="#curve" startOffset="0%">100% PURE KITSCH • RETRO VIBES •</textPath></text>
+      </svg>
+      <div class="sticker-center">★</div>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="section-eyebrow reveal">
+        <span class="line"></span>
+        <span class="text">EST. 1999 • DIGITAL WORLD</span>
+      </div>
+
+      <div class="hero-headline-wrap">
+        <h1 class="display-mixed">
+          DESIGNING <br>
+          <em>Intelligence</em><br>
+          WITH SKILLS &<br>
+          <em>Code</em><span class="dot">!</span>
+        </h1>
+      </div>
+
+      <div class="hero-bottom-row">
+        <p class="hero-para">
+          A vintage digital studio crafting loud, bold, and entirely unmistakable web experiences. Built for the modern web, stuck in the past.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn-primary">VIEW OUR WORK</a>
+          <a href="#contact" class="btn-ghost">START A PROJECT &darr;</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Kitsch Marquee -->
+  <div class="retro-marquee">
+    <div class="marquee-track">
+      <span>★ BOLD EXPERIENCES ★ NO TEMPLATES ★ HIGH QUALITY ★ 100% RETRO ★ BOLD EXPERIENCES ★ NO TEMPLATES ★ HIGH QUALITY ★ 100% RETRO </span>
+      <span>★ BOLD EXPERIENCES ★ NO TEMPLATES ★ HIGH QUALITY ★ 100% RETRO ★ BOLD EXPERIENCES ★ NO TEMPLATES ★ HIGH QUALITY ★ 100% RETRO </span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ───────────────────────────────────────────── -->
+  <section class="section halftone-bg" id="about" aria-labelledby="about-title">
+    <div class="container">
+      
+      <div class="section-eyebrow reveal">
+        <span class="line"></span>
+        <span class="text">ABOUT THE STUDIO</span>
+      </div>
+
+      <h2 id="about-title" class="display-mixed reveal" style="font-size: clamp(2.5rem, 5vw, 4.5rem);">
+        We treat <em>your agent</em> as a creative collaborator, not a black box<span class="dot">.</span>
+      </h2>
+
+      <div class="about-grid" style="margin-top: 64px;">
+        <div class="about-portrait reveal">
+          <svg viewBox="0 0 400 540" preserveAspectRatio="xMidYMid slice" fill="none" width="100%" height="100%">
+            <rect width="400" height="540" fill="var(--svg-bg-1)"/>
+            <rect x="60" y="60" width="280" height="420" stroke="var(--ink)" stroke-width="4"/>
+            <circle cx="200" cy="200" r="80" stroke="var(--ink)" stroke-width="4"/>
+            <path d="M 160 200 Q 200 240 240 200" stroke="var(--red)" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="175" cy="180" r="8" fill="var(--ink)"/>
+            <circle cx="225" cy="180" r="8" fill="var(--ink)"/>
+            <rect x="80" y="340" width="240" height="100" stroke="var(--ink)" stroke-width="4" fill="var(--teal)"/>
+            <text x="200" y="400" text-anchor="middle" fill="var(--paper)" font-size="24" font-family="Courier Prime" font-weight="bold">ISHTIHAR</text>
+          </svg>
+        </div>
+
+        <div class="about-text reveal reveal-d1">
+          <p class="about-body">
+            We are a collective of designers, engineers, and strategists united by a single
+            conviction: that the mundane is the enemy of progress. 
+          </p>
+          <a href="#contact" class="btn-primary" style="margin-top:8px">WORK WITH US</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WORK ────────────────────────────────────────────── -->
+  <section class="section section-alt" id="work" aria-labelledby="work-title">
+    <div class="container">
+      
+      <div class="section-eyebrow reveal">
+        <span class="line"></span>
+        <span class="text">SELECTED PROJECTS</span>
+      </div>
+
+      <div class="work-grid" style="margin-top: 64px;">
+        <article class="work-card reveal">
+          <div class="work-card-img">
+            <svg viewBox="0 0 520 390" preserveAspectRatio="xMidYMid slice" fill="none">
+              <rect width="520" height="390" fill="var(--svg-bg-1)"/>
+              <rect x="60" y="60" width="400" height="270" stroke="var(--ink)" stroke-width="4" fill="var(--yellow)"/>
+              <text x="260" y="210" text-anchor="middle" fill="var(--ink)" font-size="28" font-family="Courier Prime" font-weight="bold">FINTECH v3</text>
+            </svg>
+          </div>
+          <div class="work-card-body">
+            <p class="work-card-label">UX · MOBILE</p>
+            <h3 class="work-card-title">The Fintech Platform</h3>
+          </div>
+        </article>
+
+        <article class="work-card reveal reveal-d1">
+          <div class="work-card-img">
+            <svg viewBox="0 0 520 390" preserveAspectRatio="xMidYMid slice" fill="none">
+              <rect width="520" height="390" fill="var(--svg-bg-2)"/>
+              <circle cx="260" cy="195" r="120" stroke="var(--ink)" stroke-width="4" fill="var(--teal)"/>
+              <circle cx="260" cy="195" r="30" fill="var(--red)"/>
+            </svg>
+          </div>
+          <div class="work-card-body">
+            <p class="work-card-label">STOREFRONT</p>
+            <h3 class="work-card-title">The E-Comm Engine</h3>
+          </div>
+        </article>
+
+        <article class="work-card reveal reveal-d2">
+          <div class="work-card-img">
+            <svg viewBox="0 0 520 390" preserveAspectRatio="xMidYMid slice" fill="none">
+              <rect width="520" height="390" fill="var(--svg-bg-3)"/>
+              <polygon points="260,60 460,330 60,330" stroke="var(--ink)" stroke-width="4" fill="var(--red)"/>
+              <circle cx="260" cy="235" r="20" fill="var(--yellow)"/>
+            </svg>
+          </div>
+          <div class="work-card-body">
+            <p class="work-card-label">PRODUCT · AI</p>
+            <h3 class="work-card-title">AI-Powered SaaS</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ─────────────────────────────────────────── -->
+  <section class="section halftone-bg" id="services" aria-labelledby="services-title">
+    <div class="container">
+      
+      <div class="section-eyebrow reveal">
+        <span class="line"></span>
+        <span class="text">CORE CAPABILITIES</span>
+      </div>
+
+      <div class="services-list" role="list" style="margin-top: 64px;">
+        <div class="service-row reveal" role="listitem">
+          <span class="service-num label-red" aria-hidden="true">★</span>
+          <h3 class="service-name">Digital Design</h3>
+          <span class="service-meta label">UI · UX · BRANDING</span>
+        </div>
+        <div class="service-row reveal reveal-d1" role="listitem">
+          <span class="service-num label-red" aria-hidden="true">★</span>
+          <h3 class="service-name">Web Development</h3>
+          <span class="service-meta label">FRONTEND · BACKEND</span>
+        </div>
+        <div class="service-row reveal reveal-d2" role="listitem">
+          <span class="service-num label-red" aria-hidden="true">★</span>
+          <h3 class="service-name">Digital Strategy</h3>
+          <span class="service-meta label">RESEARCH · GROWTH</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS (AUTO CAROUSEL) ─────────────────────── -->
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <div class="section-eyebrow reveal">
+        <span class="line"></span>
+        <span class="text">TESTIMONIALS</span>
+      </div>
+      
+      <h2 class="display-mixed reveal" style="font-size: clamp(3rem, 6vw, 5.5rem);">
+        Trusted By <br><em>Visionaries</em><span class="dot">.</span>
+      </h2>
+    </div>
+
+    <div class="container">
+      <div class="carousel-wrapper reveal reveal-d1">
+        <div class="carousel-track">
+          <!-- Items -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar" style="background:var(--red);"></div>
+              <div class="review-meta">
+                <div class="review-name">Sarah Jenkins</div>
+                <div class="review-title">Founder, TechNova</div>
+              </div>
+            </div>
+            <p class="review-text">"Ishtihar completely transformed our digital presence. They didn't just redesign our site; they reimagined our business for the modern web."</p>
+          </div>
+          
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar" style="background:var(--teal);"></div>
+              <div class="review-meta">
+                <div class="review-name">Michael Brown</div>
+                <div class="review-title">CTO, ScaleUp Inc.</div>
+              </div>
+            </div>
+            <p class="review-text">"Their strategic approach and design execution were flawlessly aligned with our goals. Highly recommended for complex digital products."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar" style="background:var(--yellow);"></div>
+              <div class="review-meta">
+                <div class="review-name">Aisha Rahman</div>
+                <div class="review-title">CEO, Meridian Labs</div>
+              </div>
+            </div>
+            <p class="review-text">"Working with this team felt like having an in-house design department that actually cared about the final outcome, not just the deliverable."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar" style="background:var(--ink);"></div>
+              <div class="review-meta">
+                <div class="review-name">Tom Keller</div>
+                <div class="review-title">Head of Product, Apex</div>
+              </div>
+            </div>
+            <p class="review-text">"Precise, considered, and genuinely original. Every pixel was intentional. The final product absolutely exceeded every brief we set."</p>
+          </div>
+
+          <!-- Clones -->
+          <div class="review-card" aria-hidden="true">
+            <div class="review-header">
+              <div class="review-avatar" style="background:var(--red);"></div>
+              <div class="review-meta">
+                <div class="review-name">Sarah Jenkins</div>
+                <div class="review-title">Founder, TechNova</div>
+              </div>
+            </div>
+            <p class="review-text">"Ishtihar completely transformed our digital presence. They didn't just redesign our site; they reimagined our business for the modern web."</p>
+          </div>
+          <div class="review-card" aria-hidden="true">
+            <div class="review-header">
+              <div class="review-avatar" style="background:var(--teal);"></div>
+              <div class="review-meta">
+                <div class="review-name">Michael Brown</div>
+                <div class="review-title">CTO, ScaleUp Inc.</div>
+              </div>
+            </div>
+            <p class="review-text">"Their strategic approach and design execution were flawlessly aligned with our goals. Highly recommended for complex digital products."</p>
+          </div>
+          <div class="review-card" aria-hidden="true">
+            <div class="review-header">
+              <div class="review-avatar" style="background:var(--yellow);"></div>
+              <div class="review-meta">
+                <div class="review-name">Aisha Rahman</div>
+                <div class="review-title">CEO, Meridian Labs</div>
+              </div>
+            </div>
+            <p class="review-text">"Working with this team felt like having an in-house design department that actually cared about the final outcome, not just the deliverable."</p>
+          </div>
+          <div class="review-card" aria-hidden="true">
+            <div class="review-header">
+              <div class="review-avatar" style="background:var(--ink);"></div>
+              <div class="review-meta">
+                <div class="review-name">Tom Keller</div>
+                <div class="review-title">Head of Product, Apex</div>
+              </div>
+            </div>
+            <p class="review-text">"Precise, considered, and genuinely original. Every pixel was intentional. The final product absolutely exceeded every brief we set."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CASE STUDIES ─────────────────────────────────────── -->
+  <section class="section" id="case-studies">
+    <div class="container">
+      <div class="section-eyebrow reveal">
+        <span class="line"></span>
+        <span class="text">CASE STUDIES</span>
+      </div>
+
+      <h2 class="display-mixed reveal" style="font-size: clamp(3rem, 6vw, 5.5rem);">
+        Proven <em>impact</em> and scale<span class="dot">.</span>
+      </h2>
+
+      <div class="cs-grid">
+        <article class="cs-card reveal">
+          <div class="cs-img-wrap">
+            <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" fill="none">
+              <rect width="600" height="400" fill="var(--teal)"/>
+              <circle cx="300" cy="200" r="100" stroke="var(--ink)" stroke-width="6"/>
+              <circle cx="300" cy="200" r="20" fill="var(--yellow)"/>
+              <line x1="100" y1="200" x2="500" y2="200" stroke="var(--ink)" stroke-width="6"/>
+            </svg>
+          </div>
+          <div class="cs-body">
+            <h3 class="cs-title">Fintech Revolution</h3>
+            <p class="cs-desc">How we helped a leading startup scale from 10,000 to 1 million users through intensive UX architecture and a complete design system overhaul.</p>
+            <a href="#" class="btn-text">READ CASE STUDY &rarr;</a>
+          </div>
+        </article>
+
+        <article class="cs-card reveal reveal-d1">
+          <div class="cs-img-wrap">
+            <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" fill="none">
+              <rect width="600" height="400" fill="var(--red)"/>
+              <rect x="150" y="100" width="300" height="200" stroke="var(--ink)" stroke-width="6" fill="var(--yellow)"/>
+              <polygon points="300,100 400,300 200,300" fill="var(--ink)"/>
+            </svg>
+          </div>
+          <div class="cs-body">
+            <h3 class="cs-title">AI SaaS MVP Platform</h3>
+            <p class="cs-desc">From zero to one: building an intuitive interface for a complex machine learning product, resulting in a successful Series A funding round.</p>
+            <a href="#" class="btn-text">READ CASE STUDY &rarr;</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ──────────────────────────────────────────── -->
+  <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      
+      <div class="section-eyebrow reveal">
+        <span class="line"></span>
+        <span class="text">START A PROJECT</span>
+      </div>
+
+      <div class="contact-wrap" style="margin-top: 64px;">
+        <div class="contact-intro reveal">
+          <h2 class="display-mixed">
+            Let's build<br>
+            something <em>extraordinary</em><span class="dot">.</span>
+          </h2>
+          <p class="contact-sub">
+            Tell us what you're making. We'll tell you how we'd make it remarkable.
+          </p>
+          <address class="contact-detail" style="font-style: normal;">
+            <div class="contact-detail-item">
+              <span class="contact-detail-rule"></span>
+              <a href="mailto:hello@ishtihar.studio" class="contact-detail-text" style="text-decoration:none;">HELLO@ISHTIHAR.STUDIO</a>
+            </div>
+            <div class="contact-detail-item">
+              <span class="contact-detail-rule"></span>
+              <span class="contact-detail-text">ACCEPTING QUERIES — Q3 2026</span>
+            </div>
+          </address>
+        </div>
+
+        <div class="reveal reveal-d1">
+          <form class="form" name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="YOUR NAME" required>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="YOUR@EMAIL.COM" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="TELL US ABOUT YOUR PROJECT…" rows="6" required></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn-primary">SEND MESSAGE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ───────────────────────────────────────────── -->
+<footer role="contentinfo">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="footer-logo" aria-label="Ishtihar home">
+        <span class="footer-logo-mark"></span>
+        <span class="footer-logo-text">ISHTIHAR</span>
+      </a>
+      <p class="footer-tagline">100% PURE KITSCH.</p>
+    </div>
+    <nav class="footer-links" aria-label="Social Links">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 ISHTIHAR STUDIO. ALL RIGHTS RESERVED.</span>
+    <span class="footer-loc">MADE WITH INTENTION.</span>
+  </div>
+</footer>
+
+</body>
+</html>
